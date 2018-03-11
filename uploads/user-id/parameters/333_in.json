@@ -1,0 +1,1 @@
+{"Entity":{"value":"Account","type":"str","name_out":"ccrEntity","scope":"PROCESS"},"Module":{"value":"DWH","type":"str","name_out":"ccrModule","scope":"PROCESS"},"UserAccountID":{"value":"2003","type":"str","name_out":"USERACCOUNTID","scope":"SESSION"}}

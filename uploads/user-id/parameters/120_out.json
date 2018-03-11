@@ -1,0 +1,1 @@
+{"ccrACTION_RIGHTS_LIST":{"type":"map","value":{"add":{"value":"true","type":"bool"},"recover":{"value":"true","type":"bool"},"view":{"value":"true","type":"bool"},"edit":{"value":"true","type":"bool"},"del":{"value":"true","type":"bool"}},"name_out":"cepACTION_RIGHTS_LIST","scope":"PROCESS"}}

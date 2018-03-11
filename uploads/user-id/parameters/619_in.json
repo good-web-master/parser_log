@@ -1,0 +1,1 @@
+{"Entity":{"value":"Client","type":"str","name_out":"cupEntity","scope":"PROCESS"},"Mode":{"value":"Browse","type":"str","name_out":"cupMode","scope":"PROCESS"},"LookupCaller":{"type":"null","value":"null","name_out":"cupLookupCaller","scope":"PROCESS"},"Module":{"value":"DWH","type":"str","name_out":"cupModule","scope":"PROCESS"}}

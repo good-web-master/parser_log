@@ -1,0 +1,151 @@
+.block {
+	box-shadow: 0 0 5px 0 rgba(0,0,0,.3);
+	cursor: pointer;
+	width: 300px;
+}
+
+.block:hover {
+	box-shadow: 0 0 15px 0 rgba(255,104,0,.6);
+}
+
+
+.block .block-header {
+	padding: 2px 5px;
+	background-color: #60a917;
+	color: #fff;
+}
+
+.block .title{
+
+}
+
+.block .text{
+
+}
+
+.sidebar-right {
+	top: 4rem;
+	height: calc(100vh - 4rem);
+	overflow-y: auto;
+	position: sticky;
+	border-left: 1px solid #ddd;
+}
+
+
+
+
+
+/* .tree {
+	margin-left: 20px;
+}
+*/
+
+.tree ::after, .tree ::before {
+	box-sizing: content-box;
+}
+
+ul.tree, .tree ul{
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+
+.tree ul {
+	display: none;
+}
+
+.tree li.open-node > ul {
+	display: block;
+}
+
+.tree li {
+	line-height: 1.2;
+	position: relative;
+	padding: 0 0 1em 1em;
+}
+
+.tree ul li {
+	padding: 1em 0 0 1em;
+}
+
+.tree > li:last-child {
+	padding-bottom: 0;
+}
+
+
+.tree_label {
+	position: relative;
+	display: inline-block;
+	background: #fff;
+}
+
+/* ————————————————————–
+	Tree expanded icon
+*/
+li.open-node > .tree_label:before {
+	background: #000;
+	color: #fff;
+	position: relative;
+	z-index: 1;
+	float: left;
+	margin: 0 1em 0 -2em;
+	width: 1em;
+	height: 1em;
+	border-radius: 1em;
+	content: '+';
+	text-align: center;
+	line-height: .9em;
+}
+
+li.open-node > .tree_label:before {
+	content: '–';
+}
+
+/* ————————————————————–
+	Tree branches
+*/
+.tree li:before {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: -.5em;
+	display: block;
+	width: 0;
+	border-left: 1px solid #777;
+	content: "";
+}
+
+.tree_label:after {
+	position: absolute;
+	top: 0;
+	left: -1.5em;
+	display: block;
+	height: 0.5em;
+	width: 1em;
+	border-bottom: 1px solid #777;
+	border-left: 1px solid #777;
+	border-radius: 0 0 0 .5em;
+	content: '';
+}
+
+/* :checked ~ label.tree_label:after */
+li.open-node > .tree_label:after {
+	border-radius: 0 .3em 0 0;
+	border-top: 1px solid #777;
+	border-right: 1px solid #777;
+	border-bottom: 0;
+	border-left: 0;
+	bottom: 0;
+	top: 0.5em;
+	height: auto;
+}
+
+.tree li:last-child:before {
+	height: 1em;
+	bottom: auto;
+}
+
+.tree > li:last-child:before {
+	display: none;
+}
